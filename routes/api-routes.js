@@ -23,7 +23,7 @@ module.exports = function(app) {
     db.Burger.create({
       burger_name: req.body.burger_name,
       devoured: true
-    }).then(function(dbTodo) {
+    }).then(function(dbBurger) {
       // We have access to the new todo as an argument inside of the callback function
       res.json(dbBurger);
     });
